@@ -8,7 +8,65 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Sign Up Form</h1>
-    <div id="placeholder"></div>
+    <div class="main-container">
+        <img src="./images/form-background-image.webp" alt="nature leaves">
+        <div id="form-container">
+            <div id="form-header" class="space-formatting">
+                <h1>
+                    This is not a real online service! You know you need
+                    something like this in your life to help you realize
+                    your deepest dreams. <br>Sign up <em>now</em> to get started.
+                    <br><br>You <em>know</em> you want to.
+                </h1>
+            </div>
+            <form action="http://httpbin.org/post" method="post">
+                <div class="form-main space-formatting">
+                    <h2>Lets do this!</h2>
+
+                    <div class="fieldsets">
+                        <fieldset>
+                            <div>
+                                <label for="first-name">First name</label>
+                                <input type="text" id="first-name" name="first-name">
+                            </div>
+                            
+                            <div>
+                                <label for="last-name">Last name</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+
+                            <div>
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" id="tel" name="phone-number">
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+
+                            <div>
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" id="confirm-password" name="confirm-password">
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
