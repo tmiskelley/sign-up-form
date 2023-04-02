@@ -1,15 +1,15 @@
+@font-face {
+    font-family: norsebold;
+    src: url('./fonts/Norse-Bold.otf');
+}
+
 body {
     margin: 0;
-    background-color: rgb(225, 225, 228);
+    background-color: rgb(240, 240, 240);
 }
 
 h1 {
     font-size: 1.75rem;
-}
-
-img {
-    width: clamp(250px, 40vw, 600px);
-    height: 100vh;
 }
 
 form {
@@ -39,6 +39,39 @@ fieldset {
 
 .main-container {
     display: flex;
+}
+
+.card-container {
+    position: relative;
+}
+
+.bg-image {
+    width: clamp(420px, 40vw, 645px);
+    height: 100%;
+    z-index: -1;
+}
+
+.card-body {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    opacity: .8;
+    color: white;
+    top: 10rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: norsebold;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
 }
 
 .form-main {
