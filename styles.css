@@ -64,6 +64,7 @@ a:hover {
 
 .main-container {
     display: flex;
+    height: 100vh;
 }
 
 .card-container {
@@ -71,8 +72,8 @@ a:hover {
 }
 
 .bg-image {
-    width: clamp(420px, 40vw, 645px);
-    height: 100%;
+    width: 500px;
+    height: max(800px, 100%);
 }
 
 .card-body {
