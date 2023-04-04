@@ -34,25 +34,27 @@
                     <div class="fieldsets">
                         <fieldset>
                             <div class="input-box">
-                                <label for="first-name">First name</label>
-                                <input type="text" id="first-name" name="first-name">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="John">
                             </div>
                             
                             <div class="input-box">
-                                <label for="last-name">Last name</label>
-                                <input type="text" id="last-name" name="last-name">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Smith">
                             </div>
                         </fieldset>
 
                         <fieldset>
                             <div class="input-box">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email">
+                                <input type="email" id="email" name="email" placeholder="johnsmith@example.com">
                             </div>
 
                             <div class="input-box">
                                 <label for="phone-number">Phone Number</label>
-                                <input type="tel" id="tel" name="phone-number">
+                                <input type="tel" id="tel" pattern="[0-9]{10}"
+                                title="Please enter a 10 digit phone number with no lines or spaces" 
+                                name="phone-number" placeholder="5551234567">
                             </div>
                         </fieldset>
 
@@ -71,7 +73,9 @@
                 </div>
                 <div class="space-formatting" style="padding-top: 1.5rem;">
                     <button type="submit">Create Account</button>
-                    <p style="margin-top: 2em;">Already have an account? <a href="#">Log in</a></p>
+                    <p style="margin-top: 2em;">
+                        Already have an account? <a href="#">Log in</a>
+                    </p>
                 </div>
             </form>
         </div>

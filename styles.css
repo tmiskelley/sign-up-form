@@ -22,15 +22,46 @@ form {
 fieldset {
     display: flex;
     border: none;
-    gap: 1rem;
+    gap: 4rem;
     margin: 0;
     padding: 0;
+}
+
+label {
+    font-weight: 600;
+    color: rgb(46, 46, 46);
+    letter-spacing: 2px;
+}
+
+input {
+    padding: 3px 6px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    width: 14rem;
+    height: 1.4rem;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+input:invalid {
+    border: none;
+    outline: red solid 1px;
+}
+
+input:focus-visible {
+    border: none;
+    outline: blue solid 1px;
+    box-shadow: 2px 4px 10px rgb(184, 184, 184);
 }
 
 button {
     background-color: #596d48;
     color: white;
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 6px;
@@ -39,7 +70,7 @@ button {
 }
 
 button:hover {
-    background-color: #6b8555;
+    background-color: #709153;
 }
 
 a {
