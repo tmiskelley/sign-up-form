@@ -1,6 +1,6 @@
 @font-face {
-    font-family: norsebold;
-    src: url('./fonts/Norse-Bold.otf');
+    font-family: lora;
+    src: url('./fonts/Lora.ttf');
 }
 
 body {
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .bg-image {
-    width: 500px;
+    width: 525px;
     height: max(800px, 100%);
 }
 
@@ -122,7 +122,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: norsebold;
+    font-family: lora;
 }
 
 .logo {
